@@ -1,6 +1,3 @@
-import { appendFile } from "node:fs";
-import { findSourceMap } from "node:module";
-
 type Chainable<T = {}> = {
   option<K extends string, V>(
     key: K,
