@@ -28,9 +28,3 @@ type cases = [
   Expect<Equal<RemoveIndexSignature<FooBar>, { [foobar](): void }>>,
   Expect<Equal<RemoveIndexSignature<Baz>, { bar(): void; baz: string }>>,
 ];
-
-type X = {
-  [key: string]: 1;
-};
-
-type R = string extends keyof X ? true : false;
